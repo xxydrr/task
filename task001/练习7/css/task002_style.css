@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #EEEEEE;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.fr {
+    float: right;
+}
+.top {
+    width: 100%;
+    background-color: #3F3F3F;
+    height: 80px;
+    box-sizing: content-box;
+    position: relative;
+    /* border: 1px solid  rgb(212, 212, 212); */
+}
+header {
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 980px;
+    margin: 0 auto;
+
+}
+.container-banner {
+    height: 100%;
+    position: relative;
+}
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 5px;
+
+}
+ul {
+    list-style: none;
+    font-family: SimSun;
+}
+.banner ul {
+    float: right;
+}
+.banner ul li {
+    display: inline-block
+    /* margin-bottom: 5px; */
+}
+.banner ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+
+}
+.banner ul li:nth-of-type(-n+3) {
+    margin-right: 28px;
+}
+.ghLogo {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+/* top end */
+/* section :start */
+.banner-in {
+    /* width: 1200px; */
+    height: 100%;
+    margin-top: 8px;
+}
+.section {
+    width: 710px;
+    height: 370px;
+    background-color: #fff;
+    padding: 20px 22px 15px 15px;
+    position: relative;
+    margin-top: 10px;
+    box-sizing: border-box;
+    /* margin-left: 0; */
+    /* left: 0; */
+    /* margin: 0; */
+}
+.section h1 {
+    font-size: 16px;
+}
+.section h1:after {
+    content: "4.12";
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 38px;
+    background-color: #522A5C;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    font-size: 14px;
+    left: -47px;
+    top: 20px;
+
+}
+.section h2 {
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+}
+.section h2::after {
+    content: "css";
+    position: absolute;
+    display: block;
+    width: 47px;
+    height: 38px;
+    background-color: #A660B7;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    font-size: 14px;
+    left: -47px;
+    top: 58px;
+}
+.section p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-indent: 1.25em
+}
+.section .author {
+    color: #999;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+.under_page {
+    /* background-color: #000; */
+    position: relative;
+    top: 10px;
+    left: 65px;
+    
+}
+.under_page ul  {
+    list-style: none;
+}
+.under_page ul li{
+    display: inline-block;
+}
+.under_page ul li a{
+    font-size: 12px;
+    width: 70px;
+    height: 30px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 30px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    
+}
+.under_page ul li:nth-of-type(3) a,
+.under_page ul li:nth-of-type(4) a,
+.under_page ul li:nth-of-type(5) a,
+.under_page ul li:nth-of-type(6) a{
+    width: 40px;
+}
+.under_page ul li a:hover,
+.under_page ul li a:focus {
+    color: #fff;
+    background-color: #A660B7;
+}
+/* :left end */
+.section_01 {
+    width: 260px;
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    
+}
+.search {
+    width: 220px;
+    height: 40px;
+    border: solid 1px #DDD;
+    /* margin: auto; */
+    position: absolute;
+    left: 18px;
+    top: 18px;
+   
+}
+.search input {
+    box-sizing: border-box;
+    border: 0;
+}
+.search input[type=text] {
+    width: 170px;
+    height: 40px;
+    padding-left: 50px;
+    float: left;
+    /* background-color: red; */
+    color: #000;
+    background-image: url(../images/search.png) ;
+    background-repeat: no-repeat;
+    background-size: 15% auto;
+    background-position: left 10px top 8px;
+   
+}
+.search input[type=submit] {
+    width: 50px;
+    height: 40px;
+    background-color: #DDD;
+    color: #fff;
+}
+.section_02 {
+    position: relative;
+    top: 10px;
+    /* bottom: 10px; */
+}
+.section_02 ul li a {
+    /* position: absolute; */
+    display: block;
+    width: 260px;
+    height: 50px;
+    background-color: #fff;
+    color: #666;
+    box-sizing: border-box;
+    border-top: 1px solid #DDD;
+    padding-top: 16px;
+    padding-left: 18px;
+    border-left: 5px solid #DFC6E6;
+}
+.section_02 ul li a:link {
+    border-left-color: #DFC6E6;
+}
+.section_02 ul li a:visited {
+    border-left-color: #DFC6E6;
+}
+.section_02 ul li a:hover,
+.section_02 ul li a:focus {
+    border-left-color: #522A5C;
+}
+.section_02 ul li a:active {
+    border-left-color: #522A5C;
+}
+.section_03 {
+    position: relative;
+    top: 20px;
+    width: 260px;
+    height: 240px;
+    background-color: #fff;
+}
+.section_03 h1 {
+    font-size: 12px;
+    text-align: center;
+     line-height: 5;
+    padding: 0 25px;
+    color: #522A5C;
+}
+.section_03 h1 span:first-of-type {
+    float: left;
+}
+.section_03 h1 span:last-of-type {
+    float: right;
+}
+
+.date {
+    position: absolute;
+    left: 25px;
+    top: 50px;
+
+}
+.date dl {
+    float: left;
+}
+
+
+
+.date dl a,
+.date dl dt {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    height: 100%;
+    line-height: 32px;
+    width: 30px;
+    height: 32px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    /* padding-right: 20px; */
+}
+.date dl a:link {
+    color: #999;
+}
+.date dl a:visited {
+    color: #999;
+}
+.date dl a:hover,
+.date dl a:focus {
+    color: #fff;
+    background-color: #773C88;
+}
+/* .section_03 :end */
+.section_04 {
+    width: 260px;
+    height: 200px;
+    position: relative;
+    top: 30px;
+    background-color: #fff;
+}
+.section_04 p:first-child {
+    line-height: 40px;
+    margin-left: 10px;
+    color: #666;
+}
+.section_04 p {
+    color: #773C88;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 14px;
+    font-weight: 520;
+}
+.section_04 .JavaScript {
+    font-size: 25px;
+    font-weight: 700;
+}
+.section_04 .flex {
+    font-size: 10px;
+}
+.section_04 .CSS {
+    font-size: 16px;
+
+}
+.section_04 .HTML {
+    font-size: 24px;
+}
+.section_04 .HTML5 {
+    font-size: 20px;
+  
+}
+.section_04 .JQuery {
+    font-size: 16px;
+} 
+.section_04 .CSS,
+.section_04 .HTML,
+.section_04 .HTML5,
+.section_04 .JQuery {
+    padding: 0 10px;
+    font-weight: 700;
+}
+/* footer :start */
+footer {
+    width: 100%;
+    height: 380px;
+    background-color: #000;
+    position: relative;
+    margin-top: 300px;
+} 
+.introduce1  {
+    height: 38px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.introduce1 ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 38px;
+    color: #fff;
+}
+.introduce1 ul {
+    margin-left: 515px;
+}
+.introduce1 ul li {
+    float: left;
+    margin-right: 25px;
+}
+.introduce2 {
+    margin-top: 40px;
+    margin-left: 110px;
+    position: relative;
+}
+.introduce2 .footer1 dl{
+    float: left;
+    color: #ccc;
+    margin-right: 150px;
+    
+    
+}
+.introduce2 .footer1 dl:last-of-type {
+    margin-right: 0;
+}
+.introduce2 .footer1 dl dt {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.introduce2 .footer1 dl dd{
+    font-size: 12px;
+    line-height: 25px;
+}
+.introduce2 .footer1 dl a:link {
+    color: #fff;
+}
+.introduce2 .footer1 dl a:visited {
+    color: azure;
+}
+.introduce2 .footer1 dl a:hover,
+.introduce2 .footer1 dl a:focus {
+    color: red;
+}
+.introduce2 .footer1 dl a:active {
+    color: purple;
+}
+.clean {
+    clear: both;
+}
+.warn {
+    position: absolute;
+    bottom: -3px;
+}
+.warn  h1 {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 570px;
+    margin-bottom: 20px;
+
+}
+.warn .img2 {
+    margin-left: 585px;
+}

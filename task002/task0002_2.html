@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .input-item {
+        margin-left: 35%;
+        margin-top: 200px;
+        height: 50px;
+        position: relative;
+    }
+    .input-item input {
+       width: 400px;
+       height: 30px;
+       margin-right: 20px;
+
+   }
+   .input-item button {
+       width: 50px;
+       height: 35px;
+       border: 0;
+       background-color: yellow;
+       top: 0px;
+       position: absolute;
+       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+       border-radius: 5px;
+
+        } 
+
+     .time-item {
+         width: 600px;
+         margin: 0 auto;
+         margin-left: 35%;
+     }   
+       .time-item strong {
+        background: orange;
+        color: #fff;
+        line-height: 50px;
+        font-size: 36px;
+        padding: 0 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+    }
+
+    .time-item > span {
+        /* float: left; */
+        line-height: 50px;
+        color: orange;
+        font-size: 32px;
+        margin: 0 10px;
+    }
+    .title {
+      width: 500px;
+      height: 50px;
+      /* margin:200px auto 50px auto; */
+      text-align: center;
+      letter-spacing: 14px;
+      margin-left: -20px;
+      color: red;
+      
+    }
+
+    </style>
+</head>
+<body>
+    <div class="input-item">
+            <input type="text" id="text_time" placeholder="YYYY-MM-DD 00:00:00">
+            <button id="btn"></button>
+    </div>
+    <div class="time-item">
+         <h1 class="title">距离输入的时间还有</h1>
+        <strong><span id="day">00</span>天</strong>
+        <strong><span id="hour">00</span>时</strong>
+        <strong><span id="minute">00</span>分</strong>
+        <strong><span id="second">00</span>秒</strong>
+    </div>
+</body>
+<script src="./js/util.js"></script>
+<script src="./js/task002_2.js"></script>
+</html>

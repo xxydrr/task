@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+    #btn3 {
+        display: block;
+    }
+   
+   </style>
+</head>
+<body>
+    <div class="field1">
+         <h4>第一阶段</h4>
+        <input type="text" id="input">
+        <button id="btn"></button>
+    </div>
+    <br><br>
+    <div class="field2">
+        <h4>第二阶段</h4>
+        <textarea  id="input2" cols="30" rows="10"></textarea>
+        <button id="btn2"></button>
+    </div>
+    <br><br>
+    <div class="field3">
+            <h4>第三阶段</h4>
+            <textarea id="input3" cols="30" rows="10"></textarea>
+            <button id="btn3"></button>
+        </div>
+</body>
+<script src="./js/util.js"></script>
+<script src="./js/task002_1.js"></script>
+</html>
+
+
+<!-- 2020-3-11 20：58：00
+var showDay = $('#day');
+var showHour = $('#hour');
+var showMinute = $('#minute');
+var showSecond = $('#second');
+var getInterval = function(now,goal) {
+    var day,hour,minute,second;
+    var differ = goal - now;
+    differ /= 1000 ;
+    day = Math.round(differ / 60 / 60 / 24);
+    hour = Math.round(differ / 60 / 60 % 24);
+    minute = Math.round(differ / 60 % 60);
+    second = Math.round(differ % 60);
+    // console.log(differ);
+    
+    return {
+        day: day,
+        hour: hour,
+        minute: minute,
+        second: second,
+        differ : differ
+    }
+
+}
+
+function countdown(){
+    var textTime = $('#text_time').value;
+    var goal = new Date(textTime);
+    var now = new Date();
+    var interval = getInterval(now,goal);
+    showDay.innerText = interval.day;
+    showHour.innerText = interval.hour;
+    showMinute.innerText = interval.minute;
+    showSecond.innerText = interval.second; 
+    window.interval = interval;
+    if(interval.differ <= 0) {
+        clearInterval(this);
+    }
+}
+$.click('#btn',function(e) { 
+    var timeID= setInterval(function(){
+        var textTime = $('#text_time').value;
+        var goal = new Date(textTime);
+        var now = new Date();
+        var interval = getInterval(now,goal);
+        showDay.innerText = interval.day;
+        showHour.innerText = interval.hour;
+        showMinute.innerText = interval.minute;
+        showSecond.innerText = interval.second; 
+        if(interval.differ < 1) {
+            clearInterval(timeID);
+            return;
+        }
+    },1000);
+}); -->

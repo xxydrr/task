@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+/* .center1 {
+    width: 960px;
+    background-color: red;
+    height: 100px;
+    position: absolute;
+    margin-left: -480px;
+    left: 50%;
+
+
+} */
+/* 方法2 */
+/* .center2 {
+    width: 960px;
+    background-color: red;
+    height: 100px;
+    margin: 0 auto;
+} */
+/* .sharp{width:30%;margin:20px auto;}
+.b1,.b2,.b3,.b4,.b1b,.b2b,.b3b,.b4b,.b{display:block;overflow:hidden;}
+.b1,.b2,.b3,.b1b,.b2b,.b3b{height:1px;}
+.b2,.b3,.b4,.b2b,.b3b,.b4b,.b{border-left:1px solid red;border-right:1px solid red;}
+.b1,.b1b{margin:0 5px;background:red;}
+.b2,.b2b{margin:0 3px;border-width:2px;}
+.b3,.b3b{margin:0 2px;}
+.b4,.b4b{height:2px;margin:0 1px;}
+.d1{background:rgb(255, 255, 255);}
+
+.div_D {
+    position: relative;
+    width: 100%;
+}
+.div_A,.div_B,.div_C {
+    height: 50px;
+} */
+/* 方法1 定位
+.div_A {
+  
+    width: 100px;
+    background-color: red;
+   
+}
+.div_B {
+    position: absolute;
+    right:  0;
+    top: 0;
+   left: 100px;
+    background-color: blue;
+    
+}
+.div_C {
+    
+    background-color: yellow;
+    width: 100%;
+} */
+/* 方法2 定位2 */
+/* .div_A {
+    position: absolute;
+    width: 100px;
+    background-color: red;
+   
+}
+.div_B {
+    margin-left: 100px;
+    background-color: blue;
+    
+}
+.div_C {
+    background-color: yellow;
+    width: 100%;
+}
+.div_D {
+    position: relative;
+    width: 100%;
+}
+.div_A,.div_B,.div_C {
+    height: 50px;
+}  */
+/* 方法3 浮动 */
+/* 
+.div_A {
+    float: left;
+    width: 100px;
+    background-color: red;
+   
+}
+.div_B {
+    margin-left: 100px;
+    background-color: blue;
+    
+}
+.div_C {
+    background-color: yellow;
+    width: 100%;
+} */
+/* 用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化 :start */
+/* .container {
+    width: 100%;
+    background-color: red;
+    height: 540px;
+    position: relative;
+    border: solid 60px red;
+    box-sizing: border-box;
+}
+
+.colum1>div,.colum3>div{
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+   
+}
+
+.colum3>div {
+    right: 0px;
+    
+}
+.colum3_1{
+    top: 0;
+} 
+.colum1_2,.colum3_2{
+    top: 160px;
+}
+.colum1_3,.colum3_3{
+    top: 320px;
+}
+
+
+.colum2>div{
+    height: 100px;
+    background-color: blue;
+    margin-left: 260px;
+    margin-right: 260px;
+
+}
+.colum2_2,.colum2_3{
+    margin-top: 60px;
+} */
+/* end */
+/* 实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化  start */
+/* .container2 {
+    width: 100%;
+    background-color: red;
+    height: 800px;
+    /* border: solid 60px red; 
+    box-sizing: border-box;
+}
+
+.columA>div{
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+    margin-left: 60px;
+    border: solid 15px red;
+   
+} */
+
+/* end */
+

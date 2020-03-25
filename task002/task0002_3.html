@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    .banner {
+        width: 590px;
+        height: 470px;
+        margin: 50px auto;
+        background-color: red;
+        overflow: hidden;
+        position: relative;
+    }
+    .imgList {
+        width: 800%;
+        position: relative;
+    }
+    ul {
+        list-style: none;
+    }
+    .imgList li {
+        float: left;
+    }
+    .imgList img {
+        width: 100%;
+        display: block;
+    }
+    .imgList:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .listCircle {
+        /* width: 300px;
+        height: 20px; */
+        /* background-color: #fff; */
+        position: relative;
+        top: -50px;
+        left: 250px;
+    }
+    .listCircle li{
+        margin-right: 8px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgba(255,255,255,.5);
+    }
+    .listCircle .current {
+        background-color: #fff;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="banner">
+            <ul  class="imgList">
+                <li><a href=""><img src="./img/e.jpg.webp" alt=""></a></li>
+                <li><a href=""><img src="./img/a.jpg.webp" alt=""></a></li>
+                <li><a href=""><img src="./img/b.jpg.webp" alt=""></a></li>
+                <li><a href=""><img src="./img/c.jpg" alt=""></a></li>
+                <li><a href=""><img src="./img/d.jpg.webp" alt=""></a></li>
+                <li><a href=""><img src="./img/e.jpg.webp" alt=""></a></li>
+                <li><a href=""><img src="./img/a.jpg.webp" alt=""></a></li>
+            </ul>
+            <ul class="listCircle">
+                <li class="current"></li>
+                <li ></li>
+                <li ></li>
+                <li ></li>
+                <li ></li>
+            </ul>
+    </div>
+</body>
+<script src="./js/task002_3.js"></script>
+
+</html>

@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #EEEEEE;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.top {
+    width: 100%;
+    background-color: #3F3F3F;
+    height: 80px;
+    box-sizing: content-box;
+    position: relative;
+    /* border: 1px solid  rgb(212, 212, 212); */
+}
+header {
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 980px;
+    margin: 0 auto;
+
+}
+.container-banner {
+    height: 100%;
+    position: relative;
+}
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 5px;
+
+}
+ul {
+    list-style: none;
+    font-family: SimSun;
+}
+.banner ul {
+    float: right;
+}
+.banner ul li {
+    display: inline-block
+    /* margin-bottom: 5px; */
+}
+.banner ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+
+}
+.banner ul li:nth-of-type(-n+3) {
+    margin-right: 28px;
+}
+.ghLogo {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+/* top end */
+
+.banner-in {
+    background: url(../images/banner-bg.jpg) 0 0 no-repeat;
+    width: 1200px;
+    height: 526px;
+    position: relative;
+}
+.section1 {
+    width: 360px;
+    height: 120px;
+    position: absolute;
+    right: 110px;
+    bottom: 0px;
+    background-image: linear-gradient(rgba(255,255,255,.3) 0%,rgba(255,255,255,.1) 75%,rgba(255,255,255,.3) 100%); 
+}
+.section1 h1 {
+    font-size: 14px;
+    /* float: right; */
+    /* direction: rtl; */
+    text-align: right;
+}
+.section1 h1,.section1 p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+}
+.section1 p {
+    font-size: 12px;
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+.picture_introduce {
+    margin-top: 10px;
+    /* display: flex; */
+
+}
+.picture_introduce ul li {
+    width: 300px;
+    background-color: #fff;
+    float: left;
+    border: 10px solid #fff;
+    /* max-width: 1000px; */
+
+}
+.picture_introduce ul  {
+    display: flex;
+}
+.picture_introduce ul li:nth-of-type(-n+2) {
+    margin-right: 10px;
+}
+.picture_introduce p {
+    margin-top: 15px;
+    margin: 5px 30px 20px 30px;
+    font-size: 12px;
+    line-height: 170%;
+}
+.picture_introduce:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* :end */
+.introduce {
+    margin-top: 100px;
+    height: 520px;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+}
+.personal_img {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    /* background-color: red; */
+    border-radius: 50%;
+    top: -40px;
+    left: 520px;
+    background-image: url(../images/personal.png);
+}
+.introduce h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.introduce p {
+    font-size: 14px;
+    width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    /* text-align: justify; */
+    
+}
+/* :end */
+footer {
+    width: 100%;
+    height: 380px;
+    background-color: #000;
+    position: relative;
+} 
+.introduce1  {
+    height: 38px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.introduce1 ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 38px;
+    color: #fff;
+}
+.introduce1 ul {
+    margin-left: 515px;
+}
+.introduce1 ul li {
+    float: left;
+    margin-right: 25px;
+}
+.introduce2 {
+    margin-top: 40px;
+    margin-left: 110px;
+    position: relative;
+}
+.introduce2 .footer1 dl{
+    float: left;
+    color: #ccc;
+    margin-right: 150px;
+    
+    
+}
+.introduce2 .footer1 dl:last-of-type {
+    margin-right: 0;
+}
+.introduce2 .footer1 dl dt {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.introduce2 .footer1 dl dd{
+    font-size: 12px;
+    line-height: 25px;
+}
+.introduce2 .footer1 dl a:link {
+    color: #fff;
+}
+.introduce2 .footer1 dl a:visited {
+    color: azure;
+}
+.introduce2 .footer1 dl a:hover,
+.introduce2 .footer1 dl a:focus {
+    color: red;
+}
+.introduce2 .footer1 dl a:active {
+    color: purple;
+}
+.clean {
+    clear: both;
+}
+.warn {
+    position: absolute;
+    bottom: -3px;
+}
+.warn  h1 {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 570px;
+    margin-bottom: 20px;
+
+}
+.warn .img2 {
+    margin-left: 585px;
+}
