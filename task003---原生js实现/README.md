@@ -1,8 +1,8 @@
 ### 任务描述
 
-参考[设计稿](img/design.png)实现一个简单的个人任务管理系统：如下图
+参考设计稿实现一个简单的个人任务管理系统：如下图
 
-![设计稿](img/design.jpg)
+![设计稿](http://ww1.sinaimg.cn/large/0073y0I6gy1gg3qfe8jqij30zk0gon2k.jpg)
 
 任务需求描述：
 
