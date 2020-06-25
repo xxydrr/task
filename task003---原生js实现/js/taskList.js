@@ -1,80 +1,4 @@
-// (function(t){
-//     var template = 
-//     '<li> 
-//     <div class="date"></div> 
-//     <div class="wrap"> 
-//     </div> 
-// </li>';
 
-//     var template2 = 
-//     '<div class="todo></div>';
-
-//     function Task(options) {
-//         this.options = options || {};
-//         this.container = this.layout.cloneNode(true);
-//         // console.log(options);
-//         // console.log(this);
-        
-//         this.taskDate = this.container.querySelector('.date');
-//         this.taskDate.widget = this;
-//         this.taskWrap = this.container.querySelector('.wrap');
-//         t.mixin(this, options);
-//         // console.log(this);
-//         this.renderUI();
-
-//         return this;
-//     }
-
-//     t.mixin(Task.prototype, {
-//         layout: t.htmlTranslate(template),
-//         setContent: function(date) {
-//             this.taskDate.innerText = date;
-//             this.taskDate.id = '#id' + date;
-//         },
-//         addTodo: function(option){
-//             this.todo = new Todo(option).container;
-//             this.taskWrap.appendChild(this.todo);
-//         },
-//         renderUI: function() {
-//             this.date && this.setContent(this.date);
-//             if(this.name) {
-//                 this.addTodo(this.options);
-//             }
-//         },
-//     });
-
-//     function Todo(options) {
-//         options = options || {};
-//         this.container = this.layout.cloneNode(true);
-//         this.container.widget = this;
-
-//         t.mixin(this, options);
-//         this.renderUI();
-//         return this;
-//     }
-
-//     t.mixin(Todo.prototype, {
-//         layout: t.htmlTranslate(template2),
-//         renderUI: function() {
-//             if(this.date) {
-//                 this.container.setAttribute('data-data', this.date);
-//             }
-//             if(this.name) {
-//                 this.container.innerText = this.name;
-//                 this.container.setAttribute('data-name', this.name);
-//             }
-//             if(this.isFinished === true) {
-//                 t.addClass(this.container, 'z-finished');
-//             }
-//             this.container.setAttribute('data-isFinished', this.isFinished);
-//             if(this.content) {
-//                 this.container.setAttribute('data-content', this.content);
-//             }
-//         },
-//     });
-//     window.Task = Task;
-//     window.Todo = Todo;
-// })(util);
 (function(_) {
     var template = 
     `<li> 
@@ -120,9 +44,7 @@
         _renderUI: function() {
             this.date && this.setContent(this.date);
             this.name && this.addTodo(this.options);
-            // if(this.name) {
-            //     
-            // }
+          
         },
     });
 

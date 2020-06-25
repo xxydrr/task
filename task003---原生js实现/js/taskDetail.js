@@ -41,6 +41,7 @@
         this.options = options || {};
         this.container = this.layout.cloneNode(true);
         this.container.widget = this;
+        //获取对应的节点
         this.taskName = this.container.querySelector('.head-title .name');
         this.finishBtn = this.container.querySelector('.head-icon .finish');
         this.editBtn = this.container.querySelector('.head-icon .edit');
@@ -56,7 +57,6 @@
     _.mixin(Detail.prototype, {
         layout: _.htmlTranslate(template),
         setContent: function(obj) {
-            // console.log(obj.name);
             this.taskName.innerText = obj.name;
             this.taskDate.innerText = obj.date === '' ? '' : '任务日期：' + obj.date;
             this.taskContent.innerText = obj.content;

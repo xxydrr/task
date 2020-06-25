@@ -30,6 +30,7 @@
         this._initEvent();
         return this;
     }
+    // 方法一   将新对象关联到Modal.prototype
     // Modal.prototype = Object.create({
     //     layout: _.htmlTranslate(template),
     //     // 添加节点
@@ -85,11 +86,7 @@
         destroy: function() {
             this.container.parentNode.removeChild(this.container);
         },
-        // _renderUI: function() {
-        //     if(this.hasInput) {
-        //         this.body.appendChild
-        //     }
-        // },
+      
         _renderUI: function() {
             if(this.hasFlag === true) {
                 // this.body.removeChild('hasInput')

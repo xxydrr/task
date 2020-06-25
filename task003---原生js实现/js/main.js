@@ -36,9 +36,7 @@
             $.on(element, event, function(e) {
                 var oEvent = e || window.event;
                 var target = oEvent.target || oEvent.srcElement;
-                // if (target.tagName.toLowerCase() === tag) {
-                //     listener.call(target,oEvent);
-                // }
+             
                 var arr = [];
                 var eles = element.querySelectorAll(selector);
                 for(var i=0;i<eles.length;i++) {
