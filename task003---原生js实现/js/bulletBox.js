@@ -18,7 +18,7 @@
     </div>`;
      
     function Modal(options) {
-        var options = options || {}; 
+        this.options = options || {}; 
         this.container = this.layout.cloneNode(true);
         
         this.body = this.container.querySelector('.new-title');
